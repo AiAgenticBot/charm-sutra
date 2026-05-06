@@ -1,0 +1,19 @@
+{
+  "name": "charm-sutra-crm",
+  "version": "1.0.0",
+  "description": "Charm-Sutra Jewelry CRM & Invoicing System",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --enable-source-maps ./server/index.mjs",
+    "start:pm2": "pm2 start ecosystem.config.cjs",
+    "stop:pm2": "pm2 stop charm-sutra",
+    "logs": "pm2 logs charm-sutra"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
